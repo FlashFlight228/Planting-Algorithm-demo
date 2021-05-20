@@ -41,7 +41,7 @@ class planting():
     def __init__(self, seeds, dg, Gxz, Gyz, Gzz, horizontal_x, horizontal_y, depth_z, error, u):
 
         self.underground = subsurface(horizontal_x, horizontal_y, depth_z)
-        self.measquare = np.meshgrid(horizontal_x, horizontal_x)
+        self.measquare = np.meshgrid(horizontal_x, horizontal_y)
 
         self.seeds = copy.copy(seeds)
         self.seed_num = len(self.seeds)
